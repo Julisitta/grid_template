@@ -1,0 +1,52 @@
+
+
+.footer {
+    padding: 50px 20px 70px;
+    text-align: center;
+    height: 251.5px;
+    background-color: $color-primary;
+}
+
+
+
+.footer a {
+    display: block;
+    padding: 10px 8px 10px 10.3px;
+    transition: color 0.5s;
+}
+
+hr {
+    width: 75px;
+    opacity: 0.15;
+    margin-top: 0;
+}
+
+.network {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+}
+
+.fab {
+    font-size: 36px;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: $font-size;
+}
+
+.copyright p:first-child {
+    padding-top: 12px;
+    padding-left: 9px;
+    letter-spacing: 0.33em;
+    color: #637588;
+    font-weight: 100;
+}
+
+.copyright p:last-child {
+    color: $color-light;
+    font-weight: 700;
+}

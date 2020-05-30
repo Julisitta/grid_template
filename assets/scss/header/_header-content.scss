@@ -1,0 +1,74 @@
+
+.header-content
+{
+    position: relative;
+
+    &__container
+    {
+        @extend %container;
+    }
+
+    &__title
+    {
+        text-align: center;
+
+        @include lg-min
+        {
+            margin: 0 0 53px;
+        }
+        @include lg
+        {
+            margin: 0 0 43px;
+        }
+        @include md-sm
+        {
+            margin: 0 0 44px;
+        }
+        @include sm
+        {
+            margin: 0 0 45px;
+        }
+    }
+
+    &__buttons
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include sm
+        {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__buttons .btn:first-of-type {
+        @include sm-min{
+            margin-right: $gap;
+        }
+        @include sm {
+            margin-bottom: $gap;
+        }
+    }
+    .btn
+    {
+        @include lg-min
+        {
+            font-size: 1.125rem;
+            width: 250px;
+        }
+        @include lg-md
+        {
+            width: 200px;
+            height: 50px;
+            padding: 14px $gap;
+            letter-spacing: .1em;
+        }
+        @include md
+        {
+            width: 170px;
+            height: 40px;
+            padding: 10px $gap;
+            letter-spacing: .05em;
+        }
+    }
+}

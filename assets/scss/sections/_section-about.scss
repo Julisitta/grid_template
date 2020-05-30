@@ -1,0 +1,51 @@
+.about {
+
+    background-color: $color-gray-light;
+    padding: 100px 0;
+    &__container {
+        @extend %container;
+        display: flex;
+    }
+    &__hr {
+        margin-top: 147px;
+        border-left: 1.5px solid rgba(99, 117, 136, 0.13);
+        height: 200px;
+        width: 2px;
+        padding-right: 53px;
+    }
+    &__image {
+        padding-top: 10px;
+        padding-right: 2px;
+    }
+
+}
+
+.about-content {
+    padding-right: 49px;
+    &__title {
+        font-size: 2.5rem;
+        font-size: 2.5rem;
+        font-family: $font-header;
+        color: $color-primary;
+        letter-spacing: 0.1em;
+        margin: 0 0 51px 0;
+        line-height: 1.2em;
+    }
+    &__info {
+        font-size: 1.125rem;
+        letter-spacing: 0.049em;
+        line-height: 1.15;
+    }
+}
+
+.about__image img {    
+    width: 267px;
+    height: 480px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+
+

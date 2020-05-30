@@ -1,0 +1,14 @@
+%container
+{
+    max-width: $ul;
+    margin: auto;
+    padding-right: $gap;
+    padding-left: $gap;
+}
+
+%input {
+    border-width: 0;
+    width: 32.28%;
+    height: 60px;
+}
+
