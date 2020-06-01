@@ -1,51 +1,106 @@
-.subscribe {
+.subscribe
+{
     height: 120px;
+    padding: 30px 0;
+
     background-color: $color-primary;
-    padding: 29.5px 0;
-    &__form {
-    @extend %container;
-    &-item {
-        @extend %input;
-        padding: 4px 0 0 30px;
-        margin-right: 15px;
-        background-color:#38405A;
-        border: 2px solid #38405A;
-        border-bottom: 2px solid #6B7285;
-        transition: background-color 0.5s, border-color 0.5s;
-    }
-    &-button {
-        @extend %input;
-        font-size: 1.125rem;
-        letter-spacing: 0.1em;
-        padding: 18px 20px;    
-        border: 2px solid #424B63;
-        border-bottom: 2px solid #6B7285;
-        background-color: #424B63;
-        color: $color-light;
-        transition: background-color 0.5s, border-color 0.5s;
-    }
 
+    @include md-sm
+    {
+        height: 200px;
+    }
+    @include sm
+    {
+        height: 280px;
+    }
+    &__form
+    {
+        display: flex;
+
+        @extend %container;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include sm
+        {
+            flex-direction: column;
+        }
+        &-item
+        {
+            padding-top: 3px;
+            padding-left: 30px;
+
+            transition: background-color .5s, border-color .5s;
+
+            border: 2px solid #38405a;
+            border-bottom: 2px solid #6b7285;
+            background-color: #38405a;
+
+            @extend %input;
+            @include sm
+            {
+                margin-bottom: $gap;
+            }
+            &:hover
+            {
+                border: 2px solid $color-gray;
+                border-bottom: 2px solid $color-gray-light;
+                background-color: #424b63;
+            }
+        }
+        &-button
+        {
+            font-size: 1.125rem;
+
+            padding: 18px 20px;
+
+            transition: background-color .5s, border-color .5s;
+            letter-spacing: .1em;
+
+            color: $color-light;
+            border: 2px solid #424b63;
+            border-bottom: 2px solid #6b7285;
+            background-color: #424b63;
+
+            @extend %input;
+
+            &:hover
+            {
+                border-color: $color-light;
+                background-color: $color-accent;
+            }
+        }
     }
 }
 
-::placeholder { 
-    position: relative;
-    color: $color-gray; 
+::placeholder
+{
     font-size: 1.15rem;
-    letter-spacing: 0.135em;
+
+    position: relative;
+
+    letter-spacing: .135em;
+
+    color: $color-gray;
+    :hover&
+    {
+        color: #9da1ae;
+    }
 }
 
-:hover::placeholder { 
-    color: #9DA1AE;
+.name
+{
+    @include md-sm
+    {
+        width: 100%;
+    }
 }
 
-.subscribe__form-item:hover {
-    border: 2px solid $color-gray;
-    border-bottom: 2px solid $color-gray-light;
-    background-color: #424B63;
-}
-
-.subscribe__form-button:hover {
-    background-color: $color-accent;
-    border-color: $color-light;
+.email,
+.subscribe__form-button
+{
+    @include md-sm
+    {
+        width: 48.6%;
+        margin-top: 20px;
+    }
 }

@@ -6,9 +6,26 @@
     padding-left: $gap;
 }
 
-%input {
-    border-width: 0;
-    width: 32.28%;
+%input
+{
+    width: 32.308%;
     height: 60px;
+
+    border-width: 0;
+
+    @include lg-md
+    {
+        width: 31.9%;
+    }
+    @include sm
+    {
+        width: 100%;
+    }
 }
 
+%center
+{
+    display: block;
+
+    text-align: center;
+}

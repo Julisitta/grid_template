@@ -1,49 +1,142 @@
-.about {
+.about
+{
+    padding: 100px 0;
 
     background-color: $color-gray-light;
-    padding: 100px 0;
-    &__container {
-        @extend %container;
+
+    @include lg-md
+    {
+        padding: 80px 0;
+    }
+    @include md
+    {
+        padding: 60px 0;
+    }
+    @include sm
+    {
+        padding: 60px 0 56px 0;
+    }
+
+    &__container
+    {
         display: flex;
+
+        @extend %container;
+        justify-content: space-between;
+        @include sm
+        {
+            flex-direction: column;
+        }
     }
-    &__hr {
-        margin-top: 147px;
-        border-left: 1.5px solid rgba(99, 117, 136, 0.13);
-        height: 200px;
+    &__hr
+    {
         width: 2px;
-        padding-right: 53px;
+        height: 200px;
+        margin-top: 147px;
+
+        border-left: 1.5px solid rgba(99, 117, 136, .13);
+        //padding-right: 53px;
+
+        @include lg-md
+        {
+            margin-top: 114px;
+        }
+        @include md-sm
+        {
+            margin-top: 87px;
+        }
+        @include sm
+        {
+            display: none;
+        }
     }
-    &__image {
+    &__image
+    {
         padding-top: 10px;
         padding-right: 2px;
-    }
+        padding-left: 3.5px;
 
+        @include lg-md
+        {
+            padding-top: 11px;
+        }
+        @include md-sm
+        {
+            padding-top: 70px;
+            padding-right: 0;
+            padding-left: 3px;
+        }
+        @include sm
+        {
+            margin: auto;
+            padding: 20px 0 0 0;
+        }
+    }
 }
 
-.about-content {
-    padding-right: 49px;
-    &__title {
-        font-size: 2.5rem;
-        font-size: 2.5rem;
-        font-family: $font-header;
-        color: $color-primary;
-        letter-spacing: 0.1em;
+.about-content
+{
+    width: 929px;
+
+    @include lg-md
+    {
+        width: 639px;
+    }
+    @include md-sm
+    {
+        width: 470px;
+    }
+    @include sm
+    {
+        width: 534px;
+    }
+    &__title
+    {
         margin: 0 0 51px 0;
-        line-height: 1.2em;
+
+        @include lg-md
+        {
+            margin-bottom: 37px;
+        }
+        @include md-sm
+        {
+            margin-bottom: 31px;
+        }
+        @include sm
+        {
+            margin-bottom: 31px;
+        }
     }
-    &__info {
+    &__info
+    {
         font-size: 1.125rem;
-        letter-spacing: 0.049em;
         line-height: 1.15;
+
+        letter-spacing: .049em;
+
+        @include lg
+        {
+            font-size: 1rem;
+
+            letter-spacing: .055em;
+        }
     }
 }
 
-.about__image img {    
-    width: 267px;
+.about__image img
+{
+    width: 266.55px;
     height: 480px;
+
+    @include md-sm
+    {
+        width: 236px;
+        height: 424.97px;
+    }
 }
 
-p:last-child {
+p:last-child
+{
     margin-bottom: 0;
 }
 
