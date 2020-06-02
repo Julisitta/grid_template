@@ -57,9 +57,14 @@
 
     overflow: hidden;
 
-    min-height: calc(33.33vh - 13.3px);
+    min-height: calc(33.33vh - 20px * .66);
 
     background-color: $color-primary;
+
+    @include sm_h
+    {
+        min-height: 200px;
+    }
 
     &:hover
     {

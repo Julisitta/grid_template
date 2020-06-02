@@ -26,11 +26,15 @@
         }
         &-item
         {
+            font-size: 1.125rem;
+
             padding-top: 3px;
             padding-left: 30px;
 
             transition: background-color .5s, border-color .5s;
+            letter-spacing: .15em;
 
+            color: rgb(255, 255, 255);
             border: 2px solid #38405a;
             border-bottom: 2px solid #6b7285;
             background-color: #38405a;
@@ -45,6 +49,10 @@
                 border: 2px solid $color-gray;
                 border-bottom: 2px solid $color-gray-light;
                 background-color: #424b63;
+            }
+            &:focus
+            {
+                outline: none;
             }
         }
         &-button
@@ -81,10 +89,11 @@
     letter-spacing: .135em;
 
     color: $color-gray;
-    :hover&
-    {
-        color: #9da1ae;
-    }
+}
+
+:hover::placeholder
+{
+    color: #9da1ae;
 }
 
 .name

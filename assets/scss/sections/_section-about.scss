@@ -14,7 +14,7 @@
     }
     @include sm
     {
-        padding: 60px 0 56px 0;
+        padding: 60px 0;
     }
 
     &__container
@@ -30,20 +30,25 @@
     }
     &__hr
     {
-        width: 2px;
+        width: 2.1px;
         height: 200px;
         margin-top: 147px;
+        margin-right: 51px;
+        margin-left: 47px;
 
-        border-left: 1.5px solid rgba(99, 117, 136, .13);
-        //padding-right: 53px;
+        border-left: 1.5px solid rgba(99, 117, 136, .15);
 
         @include lg-md
         {
             margin-top: 114px;
+            margin-right: 22px;
+            margin-left: 18px;
         }
         @include md-sm
         {
             margin-top: 87px;
+            margin-right: 10px;
+            margin-left: 9px;
         }
         @include sm
         {
@@ -52,19 +57,15 @@
     }
     &__image
     {
-        padding-top: 10px;
-        padding-right: 2px;
-        padding-left: 3.5px;
+        display: flex;
 
-        @include lg-md
-        {
-            padding-top: 11px;
-        }
+        margin-right: 2px;
+
+        justify-content: center;
+        align-items: center;
         @include md-sm
         {
-            padding-top: 70px;
-            padding-right: 0;
-            padding-left: 3px;
+            margin-right: 0;
         }
         @include sm
         {
@@ -76,19 +77,30 @@
 
 .about-content
 {
-    width: 929px;
+    max-width: 929px;
 
+    @include ul-xl
+    {
+        max-width: 789px;
+    }
+    @include xl-lg
+    {
+        max-width: 707px;
+        //max-width: 581px;
+    }
     @include lg-md
     {
-        width: 639px;
+        max-width: 639px;
+        //max-width: 417px;
     }
     @include md-sm
     {
-        width: 470px;
+        max-width: 470px;
+        //max-width: 280px;
     }
     @include sm
     {
-        width: 534px;
+        max-width: 534px;
     }
     &__title
     {
@@ -125,7 +137,8 @@
 
 .about__image img
 {
-    width: 266.55px;
+    max-width: 266.55px;
+    //max-width: 100%;
     height: 480px;
 
     @include md-sm
@@ -135,7 +148,7 @@
     }
 }
 
-p:last-child
+.about p:last-child
 {
     margin-bottom: 0;
 }
