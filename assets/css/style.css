@@ -1317,7 +1317,7 @@ hr {
     right: 40px;
     display: none;
     text-align: right;
-    background-color: rgba(68, 89, 110, 0.1);
+    background-color: rgba(68, 89, 110, 0.9);
   }
   .header-content .btn {
     width: 170px;
