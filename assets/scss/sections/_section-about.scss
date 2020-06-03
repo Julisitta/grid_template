@@ -81,22 +81,19 @@
 
     @include ul-xl
     {
-        max-width: 789px;
+        max-width: 927px;
     }
     @include xl-lg
     {
         max-width: 707px;
-        //max-width: 581px;
     }
     @include lg-md
     {
         max-width: 639px;
-        //max-width: 417px;
     }
     @include md-sm
     {
         max-width: 470px;
-        //max-width: 280px;
     }
     @include sm
     {
@@ -138,7 +135,6 @@
 .about__image img
 {
     max-width: 266.55px;
-    //max-width: 100%;
     height: 480px;
 
     @include md-sm

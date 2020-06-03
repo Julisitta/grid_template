@@ -724,7 +724,7 @@ hr {
 .skill-item {
   position: relative;
   overflow: hidden;
-  min-height: calc(33.33vh - 20px * 0.66);
+  min-height: calc(33.33vh - 20px * .66);
   background-color: #2d3651;
 }
 
@@ -853,16 +853,16 @@ hr {
   width: 2.1px;
   height: 200px;
   margin-top: 147px;
-  margin-left: 47px;
   margin-right: 51px;
+  margin-left: 47px;
   border-left: 1.5px solid rgba(99, 117, 136, 0.15);
 }
 
 .about__image {
-  margin-right: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 2px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -912,17 +912,17 @@ hr {
 }
 
 .subscribe__form-item {
+  font-size: 1.125rem;
   padding-top: 3px;
   padding-left: 30px;
   -webkit-transition: background-color .5s, border-color .5s;
   -o-transition: background-color .5s, border-color .5s;
   transition: background-color .5s, border-color .5s;
+  letter-spacing: .15em;
+  color: white;
   border: 2px solid #38405a;
   border-bottom: 2px solid #6b7285;
   background-color: #38405a;
-  color: white;
-  letter-spacing: .15em;
-  font-size: 1.125rem;
 }
 
 .subscribe__form-item:hover {
@@ -1242,7 +1242,7 @@ hr {
 
 @media (max-width: 1339.8px) and (min-width: 1200px) {
   .about-content {
-    max-width: 789px;
+    max-width: 927px;
   }
 }
 
@@ -1288,8 +1288,8 @@ hr {
   }
   .about__hr {
     margin-top: 114px;
-    margin-left: 18px;
     margin-right: 22px;
+    margin-left: 18px;
   }
   .about-content {
     max-width: 639px;
@@ -1381,8 +1381,8 @@ hr {
   }
   .about__hr {
     margin-top: 87px;
-    margin-left: 9px;
     margin-right: 10px;
+    margin-left: 9px;
   }
   .about__image {
     margin-right: 0;
